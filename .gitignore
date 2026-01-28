@@ -1,0 +1,39 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyd
+*.pyo
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Virtual environments
+venv/
+.venv/
+.netvirebotvenv/
+
+# Env / secrets
+.env
+.env.*
+*.pem
+*.key
+
+# Logs
+*.log
+app/logs/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Large / generated artifacts (adjust if you want to keep them)
+app/vectorstores/
+app/uploads/
+app/docs/*.pdf
+

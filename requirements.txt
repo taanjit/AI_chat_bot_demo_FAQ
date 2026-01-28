@@ -1,0 +1,30 @@
+# FastAPI and web server
+fastapi==0.116.1
+uvicorn[standard]==0.35.0
+python-multipart==0.0.20
+
+# LangChain core packages
+langchain==0.3.27
+langchain-core>=0.3.72,<1.0.0
+langchain-community==0.3.27
+langchain-text-splitters==0.3.11
+
+# LangChain integrations
+langchain_ollama==0.3.6
+langchain_groq==0.3.7
+langchain_huggingface==0.3.1
+
+# Vector stores and embeddings
+faiss-cpu==1.11.0.post1
+sentence-transformers==5.0.0
+
+# Document processing
+docling==2.43.0
+
+# Utilities
+python-dotenv==1.0.0
+langsmith>=0.3.45,<1.0.0
+
+# Other dependencies
+einops==0.8.1
+streamlit>=1.28.0

@@ -1,0 +1,19 @@
+# Ignore virtual envs
+.netvirebotvenv/
+venv/
+.venv/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Git and editor stuff
+.git/
+*.swp
+*.swo
+*.log
+
+# OS-generated files
+.DS_Store
+Thumbs.db
+
