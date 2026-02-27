@@ -33,7 +33,8 @@ Thumbs.db
 .ipynb_checkpoints/
 
 # Large / generated artifacts (adjust if you want to keep them)
-app/vectorstores/
+# app/vectorstores/
 app/uploads/
 app/docs/*.pdf
+data_document/
 
