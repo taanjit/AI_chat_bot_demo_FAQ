@@ -38,17 +38,17 @@ app.add_middleware(
 app.include_router(uploads.router, prefix="/uploads", tags=["Uploads"])
 app.include_router(rag.router, prefix="/rag", tags=["RAG"])
 
-# if __name__ == "__main__":
-#     import uvicorn
-#     uvicorn.run(
-#         "app.main:app",
-#         host="0.0.0.0",
-#         port=8088,
-#         reload=True,
-#         ws_ping_interval=20,   # Interval between pings in seconds
-#         ws_ping_timeout=60,      # Timeout before considering connection inactive
-#         timeout_keep_alive=60  # Timeout for keeping a connection alive
-#     )   
+if __name__ == "__main__":
+    import uvicorn
+    uvicorn.run(
+        "app.main:app",
+        host="0.0.0.0",
+        port=8089,
+        reload=True,
+        ws_ping_interval=20,   # Interval between pings in seconds
+        ws_ping_timeout=60,      # Timeout before considering connection inactive
+        timeout_keep_alive=60  # Timeout for keeping a connection alive
+    )   
 
 
 

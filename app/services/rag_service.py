@@ -45,10 +45,8 @@ def load_retriever(llm_framework:str):
     if not os.path.exists(embedding_path):
         raise ValueError(f"FAISS index not found for database '{faiss_db_name}' at path '{embedding_path}'")
 
-    # Load embedding model
-    if llm_framework == "groq":
-        # embeddings, index = load_ollama_embeddings()
-        embeddings, index = load_huggingface_embeddings()
+    # Load embedding model (always HuggingFace, independent of LLM framework)
+    embeddings, index = load_huggingface_embeddings()
 
     # Load FAISS retriever
     new_vector_store =  FAISS.load_local(embedding_path, embeddings=embeddings, allow_dangerous_deserialization=True)
